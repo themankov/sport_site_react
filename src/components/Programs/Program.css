@@ -1,0 +1,97 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.programs_heading {
+  display: flex;
+  justify-content: space-around;
+}
+.programs_heading span {
+  font-size: 5rem;
+  font-weight: bold;
+  color: transparent;
+  font-style: italic;
+  -webkit-text-stroke: 1px var(--lightgray);
+}
+@media (max-width: 1080px) {
+  .programs_heading span {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 770px) {
+  .programs_heading span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 570px) {
+  .programs_heading span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 390px) {
+  .programs_heading span {
+    font-size: 1.5rem;
+  }
+}
+.programs_heading span:nth-child(2) {
+  color: var(--lightgray);
+}
+.programs_card {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1080px) {
+  .programs_card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 3rem 3rem;
+  background-color: var(--gray);
+  gap: 3rem;
+  width: 20vw;
+  transition: all 0.4s ease;
+}
+@media (max-width: 1080px) {
+  .card {
+    width: 40vw;
+  }
+}
+@media (max-width: 570px) {
+  .card {
+    width: 60vw;
+  }
+}
+@media (max-width: 390px) {
+  .card {
+    width: 70vw;
+  }
+}
+.card:hover {
+  background-color: var(--orange);
+  transform: scale(1.02);
+}
+.card div {
+  font-size: 1.5rem;
+}
+.programs_card .card .heading {
+  font-weight: bold;
+}
+.card_button {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: gap 0.4s ease;
+}
+.card_button:hover {
+  gap: 3rem;
+}
+.card_button span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

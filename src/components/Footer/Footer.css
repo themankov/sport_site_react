@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+.footer hr {
+  border-width: 5px;
+  border-top: var(--lightgray);
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer ul > li > a img {
+  width: 3rem;
+  cursor: pointer;
+}
+.footer img {
+  width: 26rem;
+  margin: 0 auto 4rem auto;
+}
+@media (max-width: 500px) {
+  .footer img {
+    width: 20rem;
+  }
+}
+.blur-footer-1 {
+  aspect-ratio: 1;
+  width: 15rem;
+  top: 20%;
+}
+.blur-footer-2 {
+  height: 15rem;
+  width: 25rem;
+  top: 20%;
+  right: 5%;
+  background-color: red;
+}

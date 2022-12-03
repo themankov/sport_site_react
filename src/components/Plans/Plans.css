@@ -1,0 +1,134 @@
+.plans {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  flex-direction: column;
+}
+.plans_heading {
+  display: flex;
+  justify-content: space-around;
+}
+.plans_heading span:nth-child(2n + 1) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--lightgray);
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (max-width: 1280px) {
+  .plans_heading span:nth-child(2n + 1) {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .plans_heading span:nth-child(2n + 1) {
+    font-size: 1.1rem;
+  }
+}
+.plans_heading span:nth-child(2) {
+  color: var(--lightgray);
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  font-style: italic;
+}
+@media (max-width: 1280px) {
+  .plans_heading span:nth-child(2) {
+    color: var(--lightgray);
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .plans_heading span:nth-child(2) {
+    font-size: 1.1rem;
+  }
+}
+.plans_cards {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+@media (max-width: 1000px) {
+  .plans_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.plans_cards .plans_card {
+  background-color: var(--darkGrey);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--lightgray);
+  gap: 3rem;
+}
+.plans_cards .plans_card:nth-child(2) {
+  background-color: var(--orange);
+  transform: scale(1.05);
+}
+
+.plans_card .card_title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.plans_card .card_price {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.plans_card ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.plans_card ul > li {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.plans_card ul > li img {
+  width: 2rem;
+}
+.plans_card ul > li span {
+  font-size: 1.5rem;
+}
+.plans_card .card_link {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  align-items: center;
+  transition: gap 0.4s ease;
+}
+.plans_card .card_link img {
+  width: 1rem;
+}
+.plans_card .card_link span {
+  font-size: 2rem;
+}
+.plans_card .card_link:hover {
+  gap: 2rem;
+}
+.card_btn {
+  background-color: var(--lightgray);
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.blur-plans-1 {
+  width: 15rem;
+  aspect-ratio: 1;
+  top: 15%;
+  left: 5%;
+}
+.blur-plans-2 {
+  width: 15rem;
+  aspect-ratio: 1;
+  top: 15%;
+  right: 5%;
+}
